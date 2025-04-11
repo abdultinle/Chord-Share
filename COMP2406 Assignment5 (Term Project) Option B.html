@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0165)https://people.scs.carleton.ca/~ldnel/2406winter2025/assignments/term%20project%20assignment/Term%20Project%20OPTION%20B/2406winter2025Assign5Project-OPTION%20B.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+<title>COMP2406</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;	
+	margin-left:80px;
+	margin-right:80px;
+}
+h1, h2, h3 {
+	font-weight: bold;
+	color: blue;
+}
+p {
+	font-size: large;
+}
+pre {
+	font-size: 14pt;
+}
+
+.red {
+	color: #F00;
+}
+.green {
+	color: forestgreen;
+}
+  .bold {
+	font-weight: bold;
+}
+.requirement {
+	font-weight: bold;
+	background-color: #6AF37A;
+}
+.requirement_danger {
+	font-weight: bold;
+	background-color: #F47272
+}
+.requirement_warning {
+	font-weight: bold;
+	background-color: #F6CA54
+}
+  .code {
+	font-family: "Courier New", Courier, monospace;
+}
+  .requirement_warning1 {	font-weight: bold;
+	background-color: #F7BD36
+}
+.code1 {font-family: "Courier New", Courier, monospace;
+}
+</style>
+</head>
+<body class="arial">
+<h1>COMP 2406 Winter 2025 Term Project Assignment (Assign 5) <br>
+  <br>
+OPTION B: Based on Second Half Of Course</h1>
+<h1><span class="red">Due: Tue. April 8 by 10:00pm (submitted to</span> <a href="https://brightspace.carleton.ca/">brightspace</a><span class="red">)</span> </h1>
+<p class="red">
+All assignments
+  must be submitted using <a href="https://brightspace.carleton.ca/">brightspace</a> by the due date and time. No other assignments will be accepted or
+marked. </p>
+<p class="red">&nbsp;</p>
+<p class="red">Revisions:</p>
+<p class="auto-style7">Revisions will be noted here.</p>
+<hr>
+<p>&nbsp;</p>
+<p><span class="badge-danger">Marking:</span> This assignment 
+  is based on <span class="badge-danger">12 </span>design requirements numbered <span class="badge-success"><span class="requirement">R1.1</span></span>...<span class="badge-success"><span class="requirement">R2.5</span></span> for a total of <span class="red">24</span> marks. </p>
+<p>Marks are awarded, or deducted, based on requirements as follows. Note: TAs will be running and evaluating your assignment code so we are not requesting a demonstration video for the four term assignments(only for the final project).</p>
+<table border="1">
+  <tbody><tr>
+    <th width="83">Req Type</th>
+    <th width="716">Assignment Grading</th>
+  </tr>
+  <tr>
+    <td><span class="requirement_danger">R0.x</span></td>
+    <td><p><span class="requirement_danger">Critical Submission and Intent Requirements.</span> Assignment gets 0 if <span class="bold">any</span> critical submission requirement (shown in red) is not met.<br>
+    </p></td>
+  </tr>
+  <tr>
+    <td><span class="requirement_warning">R0.x</span></td>
+    <td><p><span class="requirement_warning">Good Practice Requirements.</span> You lose 2 marks for each good practice requirement (shown in amber) not met.<br>
+    </p></td>
+  </tr>
+  <tr>
+    <td><span class="requirement">Rx.x</span></td>
+    <td><p><span class="requirement">Design Requirements.</span> You earn 2 marks for each design requirement (green) satisfied and well implemented; 1 mark if it's partly met or met but not well implemented; and 0 if it's not met or attempted.</p></td>
+  </tr>
+</tbody></table>
+<hr>
+<h2>Critical Submission and Good Practice Requirements</h2>
+<p>The following requirements pertain to all 
+  your assignments regardless of what your application is supposed to do (i.e. 
+  regardless of the design requirements). These requirements are to ensure that 
+  your code is properly documented, readable, and maintainable.</p>
+<p><span class="requirement_danger">R0.1</span> <span class="red">UNIQUENESS REQUIREMENT. The solution 
+  and code you submit must be unique. That is, it cannot be a copy of, or be too 
+  similar to, someone else's code, or other code found elsewhere. You are, however, free to use any code posted on our course website as 
+  part of your assignment solution. [Assignment mark is 0 if this requirement is not met.]</span></p>
+<p><span class="requirement_danger">R0.2</span> <span class="red">README FILE: All of your submissions MUST include a <span class="code">README.txt.</span> Your <span class="code">README.txt </span>file is the first place the marking TA will look to evaluate your submission. If there is anything wrong with your <span class="code">README.txt</span> file the marking stops and the grade is 0. Your <span class="code">README.txt</span> MUST be complete and contain all of the following:</span></p>
+<ul>
+  <li>
+    <p><span class="red"><span class="font-weight-bold">FILENAME and EXTENSION: The file name of your readme.txt file must start with the prefix "ReadMe" (not case sensitive) and the file must have an actual .txt extension. Other file extensions like .md, .html, .doc, etc. will not be accepted. The file contents must be plain text and not be in a markup language (e.g. html, or md, or xml etc.) or a programming or scripting language. [0 marks for the assignment if the filename, extension or format do not comply]. <br>
+    </span></span></p>
+  </li>
+  <li>
+    <p><span class="red"><span class="font-weight-bold">YOUR NAME, STUDENT NUMBER, and AFFIDAVIT: Your readme.txt file must contain the following affidavit statement signed using BOTH your name and student number. This is where you are identifying yourself and claiming to be the author of the work and the person who is to be credited for the work. [0 marks for assignment if any of the three items are missing, incorrect, or incomplete]. <br>
+    </span></span></p>
+    <p><span class="red"><span class="font-weight-bold">Affidavit:<br>
+      "I attest to be begin the sole author of this submitted work and any code borrowed from other sources has been identified by comments placed in my submitted code.<br>
+      YOUR_NAME,  YOUR_STUDENT_NUMBER
+      "</span></span></p>
+  </li>
+  <li>
+    <p><span class="red"><span class="font-weight-bold">INSTALL INSTRUCTIONS: Instructions on what actual commands to execute to</span> install any external code modules needed to run your code. This will likely look like <code>npm install</code> or <code>npm install module_name.</code> It must be a legitimate command that the marking TA can copy-paste-and-execute. The marker will attempt to execute your commands from a command terminal open on the directory that contains your  server file. [0 marks for the assignment if the install command is missing, incorrect, or incomplete.]</span></p>
+  </li>
+  <li>
+    <p><span class="red"><span class="font-weight-bold">LAUNCH INSTRUCTIONS: </span>Instructions on what command to execute to launch your app. e.g. <code>node server.js</code>. As the course progresses there will be more launch options so it's important to provide the actual command.</span> <span class="red">This must be a legitimate command that the marking TA can copy-paste-and-execute. The marker will attempt to execute your commands from a command terminal open on the directory that contains your  server file. [0 marks for assignment if the launch command is missing, incorrect, or incomplete.]</span></p>
+  </li>
+  <li>
+    <p> <span class="red"><span class="font-weight-bold">TESTING INSTRUCTIONS: </span></span><span class="red">Provide the acual URL you want the TA to visit with their Chrome browser to test your server. For example:</span><span class="code1">http://localhost:3000/mytest.html?name=Louis</span></p>
+    <p><span class="red">Pay attention to any specific URL's that must be supported by your app but you must supply an initial one in your README.txt file. If your app requires a userid/password to run then provide one here for the TA to use. You must supply an actual URL here and not just say something like "see output on server console". [0 marks for assignment if the URL is missing, incorrect, or incomplete.]</span></p>
+  </li>
+  <li>
+    <p> <span class="red"><span class="font-weight-bold">VIDEO DEMONSTRATION: </span></span><span class="red">Tutorials and the final term project assignment require that you post a YouTube video of you demonstrating that you have completed the required problems. In those cases you must provide the YouTube link in your ReadMe.txt file. You WILL NOT need a demonstration video for the 4 term assignments. The video link must be a valid YouTube link and viewable (i.e. not private) at the time of grading. Videos must be a proper screen capture video with sound narration. Filming your laptop screen with your phone will not be accepted. </span><span class="red">[0 marks for assignment if the YouTube video does not comply with these requirements.]</span></p>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<p><span class="badge badge-danger"><span class="requirement_danger">R0.3</span></span> <span class="red">CODE SUBMISSION, ORGANIZATION, AND COMPILATION: You must submit all the code files and data files necessary to compile and run your app. The code must at least compile without error and launch. The TA's will execute your app by following the instructions you provide in your <span class="code">README.txt</span> file. You must submit a single<span class="code">.zip</span> formatted file to brightspace. (not .rar or .tar or whatever; only .zip format is accepted). Though you can write code on Windows, Linux, or Mac OS the code must be generic enough to be OS agnostic. (See also the the requirement below about not submitting the <span class="code">node_modules</span> directory). Your code must work with at least a current Chrome browser and version 18.x.x, or higher, of node.js <span class="font-weight-bold">[Assignment mark is 0 if this requirement is not met.]</span></span></p>
+<p><span class="badge badge-danger"><span class="requirement_danger">R0.4</span></span> <span class="red">INTENT REQUIREMENT: The solution 
+  and code you submit must comply with the intent of the assignment. For example if you are required to build a node.js/javascript server and you choose to build an apache/PHP server instead you will have violated the intent of the assignment even though the user input-output experience might be the same. As another example, if you are asked to build a "thick client" solution where the server just supplies data and the browser renders it but you build a "thin client" solution where the server renders all the HTML pages you will have violated the intent even though the user's experience would look the same. <br>
+</span><span class="red"> <span class="font-weight-bold">[Assignment mark is 0 if this requirement is not met.]</span></span></p>
+<p>&nbsp;</p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.5</span></span> <span class="bold">VARIABLE AND FUNCTION NAMES:</span> All of 
+  your variables and functions should have meaningful names that reflect 
+  their purpose. Don't do what they do in math courses where they 
+  say things like: "let x be the number of customers and let y be the number of 
+  products...". Instead call your variables <strong>numberOfCustomers</strong> or <strong>numberOfProducts</strong>. Your program should not have any variables 
+  called "x" unless there is a good reason for them to be called "x". (One 
+  exception: it's OK to call simple for-loop counters i,j and k etc. when the 
+  context is clear and VERY localized.) Remember, javascript variables don't have types that can help clarify their meaning so choosing good names is even more important. Many functions in javascript are annonymous (have no name) and so the names of variables that refer to them should be well chosen.</p>
+<p>Remember: any fool can write code that a computer will understand; the goal is to write code that we can understand. <span class="font-weight-bold"><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></span></p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.6</span></span> <span class="bold">JAVASCRIPT IN STATIC HTML:</span> Your static html pages should NOT make direct reference to javascript functions. Don't do something like the following:</p>
+<pre>&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</pre>
+<p>Instead do something like this:</p>
+<pre>&lt;button type="button" id="submit_button"&gt;Try it&lt;/button&gt;</pre>
+<p>and elsewhere in your <span class="code">.js</span> javascript file say:<br>
+</p>
+<pre>document.getElementById('submit_button').addEventListener('click', myFunction)
+        </pre>
+<p><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.7</span></span> <span class="bold">COMMENTS:</span> Comments in your code 
+  must coincide with what the code actually does. It is a  common bug to modify or cut-and-paste code and forget to modify the comments and so you 
+  end up with comments that say one thing and code that actually does another. Don't over-comment your code - instead choose good variable names 
+  and function names that make the code  "self commenting". Don't be reluctant to create local variables  so that the name of the variable helps to provide clarity -there is no prize for having the fewest lines of code. <span class="font-weight-bold"><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></span></p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.8</span></span> <span class="bold">MODULARIZATION:</span> Your client-side and server-side javascript should not be in two giant files. Break you client-side javascript into smaller manageable and readable  files and include them individually with <span class="code">&lt;script&gt;</span> tags in your html document. On the server-side use <span class="code">requires</span> or <span class="code">imports</span> appropriately to organize your code into managable size files. <span class="font-weight-bold"><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></span></p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.9</span></span> <span class="bold">BLOATED CODE:</span> If your assigment uses external modules installed with npm, <span class="bold">DON'T</span> submit the <span class="code">node_modules</span> directory with your code (it's potentially huge).  Remove that directory and only submit the <span class="code">package.json</span> and <span class="code">package-lock.json</span> files. The TAs will use these files to install the required modules using the instructions in your readme.txt file. NPM modules are platform specific and must be reinstalled on the marker's platform. <span class="font-weight-bold"><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></span></p>
+<p><span class="badge badge-warning"><span class="requirement_warning">R0.10</span></span> <span class="bold">CITATION REQUIREMENT:</span> If you use code from other sources you must cite the source in comments that appear in your code. If the source is an online website then put the URL in the comments. You may use bits of code from outside sources but this may not form the complete solution you are handing in. You DON'T have to cite demo code we provide on the course web site or with tutorials and assignments, however that code should not be used for things you post publicly (like on GitHub). <span class="font-weight-bold"><span class="red">[Minus 2 marks from assignment if this requirement is not met.]</span></span></p>
+<p class="red">VERY IMPORTANT: Any 
+  sample code  provided may have bugs although none have been put there intentionally. You must be prepared to find errors in both the 
+  requirements and sample code. Please report errors so they can be fixed and an assignment 
+  revision posted.</p>
+<h2 class="red">&nbsp;</h2>
+<h2 class="red">Submission (what to submit):</h2>
+<table border="1" class="code">
+  <tbody><tr>
+    <th width="226">Question</th>
+    <th width="641">Devliverable to Submit</th>
+  </tr>
+  <tr>
+    <td>Part 1</td>
+    <td>Your entire code project for client and server side code, your README.txt file, and any related media or data files.</td>
+  </tr>
+  <tr>
+    <td>Part 2</td>
+    <td>a link to your YouTube video with sound demonstrating your project. Provide the link in the README.txt included with your submission.</td>
+  </tr>
+</tbody></table>
+<hr>
+<h2>YouTube Demonstration Of Your Application</h2>
+<p>Provide a link to a YouTube video  of your application with you giving us a demonstration and walkthrough of you app.</p>
+<p><span class="requirement_danger">Intent Requirement R0.2</span> <span class="red"> You must provide, in your ReadMe.txt file, a link to a YouTube demonstation video that we can actually watch (that is "unlisted"). If we cannot watch your video because the link is not valid or the video is "private" then no marks will be awarded for the assignment.</span></p>
+<p><span class="requirement_danger">0 marks for the assignment if there is no viewable YouTube video link.</span></p>
+<p><span class="requirement_danger">Video Length Requirement R0.3</span> <span class="red"> Your YouTube demonstation video must not be more than 10 minutes long. I will only require the TA's to watch the first 10 minutes. If your video is actually longer make sure to demonstrate the essential requirements and use cases within the first 10 minutes.</span></p>
+<hr><br>
+<h2>Project Web Application</h2>
+<p>COMP 2406 winter 2025 has a project assignment worth 15% of the course grade. Some of the parts might have been worked on in  previous exercises and you can reuse any useful content from the course.There are two options provided for the term projects: one based on Real-Time collaboration (Tutorial 05, Assignment 3) the other on the later database portion of the course.</p>
+<p>This assignment is OPTION B -based on later part of the course.</p>
+<p>You are required to design and implement a web application subject to the requirements below. Nothing is specified here as to what your app is about - that is up to you. You must meet the various requirements listed. Make sure to pay attention to any critical submission requirements.</p>
+<p>The intent of this project option is to give you a lot of freedom in what the application actually does and what you might want to build. Our specific requirements don't constrain what the application does, only that there be certain kinds of features or structures involved.</p>
+<p>&nbsp;</p>
+<hr>
+<h2>Part 1: Your Web Application</h2>
+<p>You need to decide what your web application will be about and what service it provides to its users.</p>
+<p>&nbsp;</p>
+<p><span class="requirement_danger">Intent Requirement R0.0</span> <span class="red">Your executable code must be written in  Javascript and use the technologies and techniques taught in the course. We should be able to run your code using our node.js installation and following the instructions in your ReadMe.txt file.</span></p>
+<p><span class="requirement_danger">Intent Requirement R0.1</span> <span class="red">Your application must use a database or database service. You can use one of the databases from the course (e.g. SQLite) or use another database or online database service.</span></p>
+<p><span class="requirement_danger">0 marks for this assignment  if any intent requirement is not met.</span></p>
+<p>&nbsp;</p>
+<p><span class="requirement">R 1.1</span> <span class="red">[2 marks]</span> You web application must have the notion of users that are required to log into the application to use it. Unauthorized users should not be able to access the application's services. There should be at least two kinds of users: "guest" and "admin"</p>
+<p><span class="requirement">R 1.2</span> <span class="red">[2 marks]</span> Your application should provide a way for a new "guest" user to register and create a new "guest" account. </p>
+<p><span class="requirement">R 1.3</span> <span class="red">[2 marks]</span> You application must provide an "admin" level user who could use the application to show who the current users are. (The admin level users might have other priviledges too as appropriate for your app.). Note the admin user could be created in the database (there need not be a webpage to create these users.)</p>
+<p><span class="requirement">R 1.4</span> <span class="red">[2 marks]</span> Your application must make use of some public content API which is querried for some data or service. You can either use a publicly available API or create your own API server that is running as a separate resource. (Note an external database service does not count as this public API.)</p>
+<p><span class="requirement">R 1.5</span> <span class="red">[2 marks]</span> Your application should behave like a "single-page" web app. That is, have the contents of the page change approriately rather than just loading new webpages from hyperlinks. Note it is acceptable for your app to open content in a new browser tab if it is appropriate for your application.</p>
+<p> Further clarification: It is OK if your application URL changes (e.g. if the server renders a new page for your application) but the users should not need to enter new URL's in the web browsers address bar. That is, once your application loads the users should interact with what is on the page (e.g. text fields and buttons) and not have to make up new URLs to type into the browser address bar.</p>
+<p><span class="requirement">R 1.6</span> <span class="red">[2 marks]</span> Your application should use template rendering. That is, not just have the HTML generated within the javascript code. You can use either server-side or client-side rendering. Popular template renderers include Handlebars and PUG. You are free to choose. Template rendering will be covered in tutorial 10.</p>
+<p><span class="requirement">R 1.7</span> <span class="red">[2 marks]</span> Your application should allow users to contribute content which will be stored in the database. The content should be persistent (still be there if they log out and log back in). The content provided by the users should be appropriate for the application. You will have to decide what that should be.</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h2>Part 2: YouTube Demonstration Of Your Application</h2>
+<p>Provide a link to a YouTube video  of your application with you giving us a demonstration and walkthrough of you app.</p>
+<p><span class="requirement_danger">Intent Requirement R0.2</span> <span class="red"> You must provide, in your ReadMe.txt file, a link to a YouTube demonstation video that we can actually watch (that is "unlisted"). If we cannot watch your video because the link is not valid or the video is "private" then no marks will be awarded for the assignment.</span></p>
+<p><span class="requirement_danger">0 marks for the assignment if there is no viewable YouTube video link.</span></p>
+<p><span class="requirement_danger">Video Length Requirement R0.3</span> <span class="red"> Your YouTube demonstation video must not be more than 10 minutes long. I will only require the TA's to watch the first 10 minutes. If your video is actually longer make sure to demonstrate the essential requirements and use cases within the first 10 minutes.</span></p>
+<p>&nbsp;</p>
+<p><span class="requirement">R2.1</span> <span class="red">[2 marks]</span> Your demonstration video should start with you introducing yourself and giving a brief description of what your web application is about and what service it provides for the users. The total duration of your  video must  not be more than 10 minutes.</p>
+<p><span class="requirement">R2.2</span> <span class="red">[2 marks]</span> Your demonstration video must have sound narration. That is, audio of you talking us through the demonstration.</p>
+<p><span class="requirement">R2.3</span> <span class="red">[2 marks]</span> Demonstrate one of the main intended use-cases of your  application. That is, one of the scenarios you think demonstrates what the application is used for.</p>
+<p><span class="requirement">R2.4</span> <span class="red">[2 marks]</span> Demonstrate a second important use-case  of your database application. </p>
+<p><span class="requirement">R2.5</span> <span class="red">[2 marks]</span> Demonstrate a user creating an account in your app and demonstrate an unauthorized user not being allowed to access it. </p>
+<p>&nbsp;</p>
+<p></p>
+<hr>
+<p>&nbsp;</p>
+<h2>&nbsp;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<veepn-lock-screen><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;-moz-tab-size:4;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none!important}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{-webkit-appearance:none;-moz-appearance:none;appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{-webkit-appearance:button;-moz-appearance:button;appearance:button;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}.lock-screen{font-family:FigtreeVF,sans-serif;letter-spacing:normal;position:fixed;z-index:2147483638;top:0;right:0;bottom:0;left:0;padding:32px 40px;color:#222e3a;background-color:#fdfdfd;display:flex;flex-direction:column;row-gap:12px;overflow:auto;background-image:radial-gradient(circle at 0% 0%,#e6fffdcc,#e6fffd00 50%),radial-gradient(circle at 100% 0%,#ebfffecc,#ebfffe00 50%),radial-gradient(circle at 100% 100%,#f0f5ffcc,#f0f5ff00 50%),radial-gradient(circle at 0% 100%,#f2f2ffcc,#f2f2ff00 50%),radial-gradient(circle at 50% 50%,#fff,#fffc,#f5f5ff66,#f0f0ff33,#f0f0ff00),linear-gradient(to bottom right,#e6fffd,#f2f2ff);background-size:100% 100%;background-repeat:no-repeat}.lock-screen__header{display:flex;align-items:center;justify-content:space-between}.lock-screen__logo{display:inline-flex;align-items:center;column-gap:12px;font-size:18px;font-weight:600}.lock-screen__close{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background-color:#222e3a1a}.lock-screen__main{flex-grow:1;align-content:center}.lock-screen__container{max-width:1120px;margin-inline:auto;display:flex;align-items:center;gap:24px}@media (width < 972px){.lock-screen__container{flex-direction:column}}.lock-screen__timer{display:flex;align-items:center;justify-content:center;width:100%}.lock-screen__content{width:100%}.lock-screen__title{font-size:48px;font-weight:700;line-height:56px;margin-bottom:16px}.lock-screen__description{font-size:18px;line-height:32px;margin-bottom:24px}.lock-screen__actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.lock-screen__action{height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;text-align:center;padding:8px 24px}.upgrade-btn{color:#fff;background:linear-gradient(180deg,#20df9e,#13cf8f)}.skip-btn{color:#3066ff;border-width:1px;border-style:solid;border-color:#3066ff;position:relative}.skip-btn__tooltip{font-size:14px;line-height:24px;font-weight:400;position:absolute;z-index:1;left:50%;top:calc(100% + 18px);padding:8px 12px;color:#fff;border:1px solid #4a5764;background-color:#222e3a;border-radius:8px;width:max-content;pointer-events:none;animation:slide-in .6s ease-in-out forwards}@keyframes slide-in{0%{opacity:0;transform:translate(-50%,-100%)}to{opacity:1;transform:translate(-50%)}}.skip-btn__tooltip:after{content:"";display:block;position:absolute;z-index:1;top:-8px;left:50%;width:0;height:0;border-style:solid;border-width:0 8px 8px;border-color:transparent transparent #222e3a;transform:translate(-6px)}.skip-btn__icon{display:none}.skip-btn:disabled{cursor:not-allowed}.skip-btn:disabled .skip-btn__tooltip,.skip-btn:disabled .skip-btn__text{display:none}.skip-btn:disabled .skip-btn__icon{display:initial;animation:tick-tock .8s steps(8,end) infinite}@keyframes tick-tock{to{transform:rotate(360deg)}}.timer{position:relative;max-width:422px;width:100%;aspect-ratio:1/1;border-radius:50%;background-color:#fff;box-shadow:0 0 40px #2b374114;display:flex;align-items:center;justify-content:center;pointer-events:none;-webkit-user-select:none;user-select:none}.timer__circle-backward{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;max-width:100%;height:auto;opacity:.4}.timer__circle-forward{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);z-index:1;max-width:100%;height:auto;animation:sector 5s linear forwards}.timer__fire-icon{position:absolute;top:22%;left:50%;transform:translate(-50%);z-index:2}.timer__text{font-size:clamp(18px,10vw,88px);letter-spacing:-1px;text-align:center;font-variant-numeric:tabular-nums;position:relative;z-index:3}.timer--finished .timer__text{color:#98a0a9}.timer--finished .timer__circle-forward{display:none}@keyframes sector{0%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 100%,0% 100%,0% 2%)}25%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 100%,0% 100%,0% 100%)}25.000001%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 100%,0% 100%)}50%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 100%,100% 100%)}50.000001%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 100%)}75%{clip-path:polygon(50% 50%,0% 2%,100% 0%,100% 0%)}75.000001%{clip-path:polygon(50% 50%,0% 2%,100% 0%)}to{clip-path:polygon(50% 50%,0% 2%,0% 0%)}}@media (prefers-color-scheme: dark){.lock-screen{color:#fff;background-image:radial-gradient(circle at 0% 0%,#2f4f4fcc,#2f4f4f00 50%),radial-gradient(circle at 100% 0%,#193042cc,#19304200 50%),radial-gradient(circle at 100% 100%,#1c3041cc,#1c304100 50%),radial-gradient(circle at 0% 100%,#1b263bcc,#1b263b00 50%),radial-gradient(circle at 50% 50%,#141e28,#141e28cc,#1b263b66,#1c304133,#1c304100),linear-gradient(to bottom right,#2f4f4f,#1b263b)}.lock-screen__close{background-color:#ffffff1a}.skip-btn{color:#fff;border-color:#fff}.skip-btn__tooltip{color:#222e3a;border:1px solid #f5f6f7;background-color:#fff}.skip-btn__tooltip:after{border-color:transparent transparent #fff}.timer{background-color:#191b25}.timer__circle-backward{opacity:1}.timer--finished .timer__text{color:#5c6977}}</style></template><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen><veepn-guard-alert><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;-moz-tab-size:4;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none;-moz-appearance:none;appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{-webkit-appearance:none;-moz-appearance:none;appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{-webkit-appearance:button;-moz-appearance:button;appearance:button;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}.guard-popup{font-family:FigtreeVF,sans-serif;position:fixed;z-index:2147483638;top:8px;left:24px;overflow:visible;color:#222e3a;background-color:#fff;max-width:416px;width:calc(100% - 48px);border-radius:16px;box-shadow:0 4px 20px #00000040;padding:24px}.guard-popup__header{display:flex;justify-content:space-between;align-items:center;column-gap:16px;margin-bottom:24px}.guard-popup__close{display:flex;align-items:center;justify-content:center;width:24px;height:24px;opacity:.7}.guard-popup__img{line-height:0;margin-bottom:24px}.guard-popup__img img{width:100%;aspect-ratio:368/142;object-fit:cover;border-radius:12px;overflow:hidden}.guard-popup__title{font-size:24px;line-height:32px;margin-bottom:8px}.guard-popup__description{font-size:20px;line-height:28px;font-weight:500;color:#4a5764;margin-bottom:28px}.guard-popup__actions{display:flex;justify-content:flex-end;column-gap:16px}.guard-popup__btn{display:flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:5px;font-size:16px;line-height:24px;font-weight:700;cursor:pointer;color:#fff;background:linear-gradient(180deg,#5695fd,#1554ff)}</style></template><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-guard-alert></body></html>

@@ -1,0 +1,41 @@
+<h1>{{title}}</h1>
+<a href="/home">Back</a> 
+
+<h2>Users</h2>
+<table>
+    <tr>
+        <th>User Id</th>
+         <th>Role</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <td>{{this.userid}}</td>
+        <td>{{this.role}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h2>User Chords</h2>
+<table>
+    <tr>
+        <th>Author</th>
+         <th>Song</th>
+         <th>Artist</th>
+         <th>Chords</th>
+        <th>Action</th>
+    </tr>
+    {{#each chordEntries}}
+    <tr>
+         <td>{{this.userid}}</td>
+        <td>{{this.trackName}}</td>
+        <td>{{this.artistName}}</td>
+        <td><pre>{{this.chords}}</pre></td>
+        <td>
+            <form action="/admin/deleteChord" method="POST" onsubmit="return confirm('Delete this Chord?');">
+            <input type="hidden" name="chordId" value="{{this.id}}" />
+             <button class="btn">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>

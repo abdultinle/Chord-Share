@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<a href="/home">Back</a>
+{{#each chordEntries}}
+<div class="chord-box">
+    <strong>{{trackName}}</strong> by {{artistName}}<br>
+    <pre>{{chords}}</pre>
+</div>
+{{/each}}

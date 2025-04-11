@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<h3>Welcome, {{user.userid}}</h3>
+
+<nav>
+    <a href="/mychords">My Chords</a> |
+    <a href="/logout">Logout</a> 
+    {{#ifCond user.role "==" "admin"}}
+    <a href="/admin">Users</a>
+    {{/ifCond}}
+</nav>
+
+<hr>
+<form id="search-form">
+    <label>Search for a song:</label>
+    <input type="text" id="term" placeholder="Enter song title" required /><br>
+    <button type="submit" class="btn">Search</button>
+</form>
+
+<div id="results"></div>
+<script src="/js/script.js"></script>

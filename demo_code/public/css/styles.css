@@ -1,0 +1,36 @@
+/* public/css/styles.css file for styling*/
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 2rem;
+	background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+	color: #333;
+}
+
+input, button {
+	padding: 8px;
+	margin: 5px;
+}
+
+.song-box, .chord-box {
+	padding: 1rem;
+	background: white;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.btn {
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #45a049;
+}
